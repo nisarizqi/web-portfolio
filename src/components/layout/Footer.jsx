@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="text-center sm:text-left">
           <p className="font-display font-semibold tracking-tight
             bg-gradient-signature bg-clip-text text-transparent">
-            putri.dev
+            khairunnisaaptr.my.id
           </p>
           <p className="text-xs text-light-textSecondary dark:text-dark-textSecondary mt-1">
             © {new Date().getFullYear()} {profile.name}. Built with React & Tailwind.

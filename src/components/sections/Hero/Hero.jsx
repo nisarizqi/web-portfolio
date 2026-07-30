@@ -16,6 +16,16 @@ const fadeUp = {
   }),
 };
 
+const scrollToProjects = () => {
+  const section = document.getElementById("projects");
+
+  if (section) {
+    section.scrollIntoView({
+      behavior: "smooth",
+    });
+  }
+};
+
 export default function Hero() {
   return (
     <section
@@ -97,8 +107,8 @@ export default function Hero() {
             custom={3}
             className="mt-10 flex flex-wrap items-center gap-4"
           >
-            <motion.a
-              href="#projects"
+            <motion.button
+              onClick={scrollToProjects}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="rounded-full bg-gradient-to-r 
@@ -109,7 +119,7 @@ export default function Hero() {
                 transition-all duration-500"
             >
               View Projects
-            </motion.a>
+            </motion.button>
 
             <motion.a
               href={profile.resumeUrl}
