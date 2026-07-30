@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-body bg-light-bg text-light-textPrimary dark:bg-dark-bg dark:text-dark-textPrimary transition-colors duration-300;
+}
+
+::selection {
+  @apply bg-light-accent/20 dark:bg-dark-accent/30;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-light-accentSoft dark:bg-dark-accentAlt rounded-full;
+}
+
+.glass-card {
+  @apply bg-white/70 border border-black/5 dark:bg-white/[0.04] dark:border-white/10 backdrop-blur-glass;
+}
+
+.glow-border {
+  @apply dark:shadow-glow dark:border-dark-accent/40;
+}
+
+:focus-visible {
+  outline: 2px solid #E0116D;
+  outline-offset: 2px;
+}
+.dark :focus-visible {
+  outline-color: #FF2E9F;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
