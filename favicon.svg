@@ -1,0 +1,65 @@
+<svg
+  width="2000"
+  height="2000"
+  viewBox="0 0 200 200"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <style>
+    /* Default: Light Mode */
+    .grad-start { stop-color: #E0116D; }
+    .grad-end { stop-color: #C9A0DC; }
+    .sparkle { fill: #FF6FB5; }
+
+    /* Auto-switch ke Dark Mode */
+    @media (prefers-color-scheme: dark) {
+      .grad-start { stop-color: #FF2E9F; }
+      .grad-end { stop-color: #B565F5; }
+      .sparkle { fill: #FF2E9F; }
+    }
+  </style>
+
+  <defs>
+    <linearGradient
+      id="dynamic-gradient"
+      x1="0%"
+      y1="0%"
+      x2="100%"
+      y2="100%"
+    >
+      <stop class="grad-start" offset="0%" />
+      <stop class="grad-end" offset="100%" />
+    </linearGradient>
+  </defs>
+
+  <rect
+    x="50"
+    y="40"
+    width="24"
+    height="120"
+    rx="12"
+    fill="url(#dynamic-gradient)"
+  />
+  <rect
+    x="115"
+    y="45"
+    width="24"
+    height="85"
+    rx="12"
+    transform="rotate(35 115 45)"
+    fill="url(#dynamic-gradient)"
+  />
+  <rect
+    x="110"
+    y="100"
+    width="24"
+    height="85"
+    rx="12"
+    transform="rotate(-35 110 100)"
+    fill="url(#dynamic-gradient)"
+  />
+  <path
+    class="sparkle"
+    d="M 165 15 Q 165 40 190 40 Q 165 40 165 65 Q 165 40 140 40 Q 165 40 165 15 Z"
+  />
+</svg>
