@@ -1,0 +1,272 @@
+{
+  "meta": {
+    "owner": "Khairunnisa (Putri Rizqi Khairunnisa)",
+    "description": "Domain-specific intents for the portfolio chatbot. Each intent has a tag, a set of example user patterns used to train the TF-IDF/keyword matcher, and one or more candidate responses.",
+    "confidence_threshold": 0.28
+  },
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hi",
+        "hello",
+        "hey",
+        "hey there",
+        "good morning",
+        "good afternoon",
+        "good evening",
+        "yo",
+        "is anyone there",
+        "what's up",
+        "howdy"
+      ],
+      "responses": [
+        "Hi there! 👋 I'm Nisa's portfolio assistant. Ask me about her projects, skills, experience, or how to get in touch.",
+        "Hello! Feel free to ask me anything about Khairunnisa's work as a Mobile Application Developer."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see you",
+        "see you later",
+        "talk to you later",
+        "that's all",
+        "i'm done",
+        "thanks bye",
+        "end chat"
+      ],
+      "responses": [
+        "Thanks for stopping by! Feel free to reach out at khairunnisaaptr@gmail.com if you'd like to connect.",
+        "Goodbye! Don't forget to check out the projects section before you go. 👋"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thanks",
+        "thank you",
+        "thank you so much",
+        "appreciate it",
+        "that's helpful",
+        "cool thanks",
+        "great, thanks"
+      ],
+      "responses": [
+        "You're welcome! Let me know if there's anything else you'd like to know about Nisa's work.",
+        "Happy to help! Ask away if you have more questions."
+      ]
+    },
+    {
+      "tag": "about_me",
+      "patterns": [
+        "who are you",
+        "tell me about yourself",
+        "tell me about khairunnisa",
+        "who is nisa",
+        "what do you do",
+        "introduce yourself",
+        "give me an overview of your background",
+        "what is this portfolio about",
+        "can you introduce khairunnisa",
+        "what kind of developer are you"
+      ],
+      "responses": [
+        "Khairunnisa is a Mobile Application Developer based in Indonesia, focused on building intuitive, production-ready mobile applications with Flutter and Android. She cares about creating apps that are fast, secure, and genuinely useful for the people who rely on them every day.",
+        "She's a Mobile Application Developer with hands-on experience building production-ready Flutter applications and the RESTful APIs behind them — including AI-powered features like biometric authentication, facial recognition, and location services."
+      ]
+    },
+    {
+      "tag": "technical_skills_mobile",
+      "patterns": [
+        "what are your skills",
+        "what technologies do you know",
+        "what is your tech stack",
+        "do you know flutter",
+        "do you know kotlin",
+        "what mobile frameworks do you use",
+        "tell me about your mobile development skills",
+        "what programming languages do you use",
+        "are you good at android development",
+        "what tools do you use for app development"
+      ],
+      "responses": [
+        "On the mobile side, Nisa works with Flutter, Kotlin, and Jetpack Compose, using Riverpod for state management, plus Google ML Kit and Google Maps for AI and location features.",
+        "Her core mobile stack is Flutter and Kotlin (Jetpack Compose), backed by REST API integration with Laravel, JWT authentication, and MySQL for the backend side."
+      ]
+    },
+    {
+      "tag": "technical_skills_ai",
+      "patterns": [
+        "do you know machine learning",
+        "do you know nlp",
+        "what data science skills do you have",
+        "do you work with python",
+        "tell me about your AI experience",
+        "what machine learning tools do you use",
+        "do you know pytorch",
+        "have you worked on deep learning",
+        "what about natural language processing"
+      ],
+      "responses": [
+        "Yes — Nisa has experience with Python and PyTorch for deep learning, including NusaBERT for NLP tasks, and Google ML Kit for on-device computer vision features like facial verification.",
+        "Her AI/ML background includes deep learning with PyTorch (U-Net for medical image segmentation), NusaBERT for NLP, and applied ML with scikit-learn for recommendation systems."
+      ]
+    },
+    {
+      "tag": "technical_skills_workflow",
+      "patterns": [
+        "what tools do you use for development workflow",
+        "do you use git",
+        "do you use figma",
+        "what is your development process",
+        "how do you collaborate with a team",
+        "what tools do you use for testing APIs"
+      ],
+      "responses": [
+        "For workflow and collaboration, Nisa uses Git and GitHub for version control, Postman for API testing, and Figma for reviewing designs and handoff."
+      ]
+    },
+    {
+      "tag": "projects_overview",
+      "patterns": [
+        "what projects have you worked on",
+        "tell me about your projects",
+        "show me your portfolio",
+        "what have you built",
+        "can you list your projects",
+        "what apps have you made",
+        "what is your best project"
+      ],
+      "responses": [
+        "Nisa has worked on several projects: SoloHRIS (a Flutter enterprise attendance app), Bersih.Kan (an AI-powered waste management app, top 50 Bangkit Capstone), a White Blood Cell Segmentation deep learning model (her bachelor's thesis, graded A), and a Plant Recommendation System (ministry-funded research). Ask me about any one of them for more detail!"
+      ]
+    },
+    {
+      "tag": "project_solohris",
+      "patterns": [
+        "tell me about solohris",
+        "what is solohris",
+        "what is the attendance app",
+        "tell me about the hris project",
+        "how does the biometric attendance app work",
+        "what did you build at bank solo",
+        "tell me about the facial verification project",
+        "what is the GPS attendance validation project"
+      ],
+      "responses": [
+        "SoloHRIS is a Flutter-based mobile attendance application Nisa built for PT BPR Bank Solo (Perseroda), replacing their legacy web-based system. It features biometric authentication, Google ML Kit facial verification, GPS-based attendance validation, and a digital leave management workflow. It's built with Flutter, Laravel, REST API, Google ML Kit, and MySQL, and is currently used internally by 25+ employees."
+      ]
+    },
+    {
+      "tag": "project_bersihkan",
+      "patterns": [
+        "tell me about bersih.kan",
+        "what is bersihkan",
+        "tell me about the waste management app",
+        "what is the bangkit capstone project",
+        "tell me about your android project"
+      ],
+      "responses": [
+        "Bersih.Kan is an AI-powered waste management platform built with Kotlin and Jetpack Compose. It helps users classify waste using machine learning and discover nearby recycling services. It was a Top 50 project in the Bangkit Capstone program."
+      ]
+    },
+    {
+      "tag": "project_wbc",
+      "patterns": [
+        "tell me about the white blood cell project",
+        "what is your thesis about",
+        "tell me about your bachelor thesis",
+        "what is the wbc segmentation project",
+        "tell me about your deep learning project",
+        "what is u-net used for in your project"
+      ],
+      "responses": [
+        "Nisa's bachelor's thesis (graded A) focused on White Blood Cell Segmentation for AML detection, using a U-Net architecture with attention mechanisms to improve medical image segmentation. It was built with Python and PyTorch."
+      ]
+    },
+    {
+      "tag": "project_plant",
+      "patterns": [
+        "tell me about the plant recommendation system",
+        "what is the plant project",
+        "tell me about your machine learning research",
+        "what is the ministry funded project",
+        "tell me about the svm project"
+      ],
+      "responses": [
+        "The Plant Recommendation System is a ministry-funded research project that predicts suitable plants based on environmental and soil characteristics, using Python, scikit-learn, SVM, and an Artificial Bee Colony optimization algorithm."
+      ]
+    },
+    {
+      "tag": "work_experience",
+      "patterns": [
+        "what is your work experience",
+        "where have you worked",
+        "tell me about your job",
+        "what is your current job",
+        "have you had an internship",
+        "tell me about your career",
+        "where do you currently work",
+        "what do you do at bank solo",
+        "have you been a teaching assistant"
+      ],
+      "responses": [
+        "Nisa currently works as IT Staff at PT BPR Bank Solo (Perseroda) since November 2025, where she built SoloHRIS. Before that, she was a Software Developer Intern at DTIK UNS (Oct 2023 – Dec 2024), creating technical documentation for academic websites, and a Teaching Assistant for Android Development at Universitas Sebelas Maret (Feb–Jun 2024), mentoring 50+ students."
+      ]
+    },
+    {
+      "tag": "education",
+      "patterns": [
+        "what did you study",
+        "where did you go to university",
+        "what is your education background",
+        "what is your degree",
+        "what is your gpa",
+        "tell me about your university",
+        "what courses did you take"
+      ],
+      "responses": [
+        "Nisa holds a Bachelor's Degree in Informatics from Universitas Sebelas Maret (2021–2025) with a GPA of 3.89. Her coursework included Android Development, Artificial Intelligence, Software Engineering, OOP, Databases, and Data Structures & Algorithms."
+      ]
+    },
+    {
+      "tag": "contact_info",
+      "patterns": [
+        "how can i contact you",
+        "what is your email",
+        "how do i reach you",
+        "what is your linkedin",
+        "what is your github",
+        "how can i hire you",
+        "are you available for work",
+        "can i get your phone number",
+        "how do i get in touch"
+      ],
+      "responses": [
+        "You can reach Nisa at khairunnisaaptr@gmail.com or +6285172454734. She's also on GitHub (github.com/nisarizqi) and LinkedIn (linkedin.com/in/putririzqik) — feel free to connect!"
+      ]
+    },
+    {
+      "tag": "resume_request",
+      "patterns": [
+        "can i see your resume",
+        "do you have a cv",
+        "can i download your resume",
+        "where is your resume",
+        "send me your cv",
+        "do you have a portfolio deck"
+      ],
+      "responses": [
+        "Sure — you can download her resume directly from the site (see the 'Resume' button in the hero section), or ask the recruiter link at the top of the page."
+      ]
+    }
+  ],
+  "fallback_responses": [
+    "I'm not sure I understood that. You can ask me about Nisa's projects, skills, work experience, education, or how to contact her.",
+    "Hmm, I don't have an answer for that yet. Try asking about SoloHRIS, her Flutter skills, or her work experience!",
+    "I didn't quite catch that. I'm best at answering questions about Nisa's background, technical skills, and projects."
+  ]
+}
